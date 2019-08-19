@@ -187,4 +187,180 @@ public class GildedRoseTest {
         Assert.assertEquals(gildedRose.items[0].sellIn, 0);
     }
 
+
+    @Test
+    public void should_return_quality_given_name_BackstagepassestoaTAFKAL80ETCconcert_sellin_0_quality_50() {
+        Item[] items = {new Item("Backstage passes to a TAFKAL80ETC concert", 0, 50)};
+        GildedRose gildedRose = new GildedRose(items);
+
+        gildedRose.updateQuality();
+
+        Assert.assertEquals(gildedRose.items[0].quality, 0);
+        Assert.assertEquals(gildedRose.items[0].sellIn, -1);
+    }
+
+    @Test
+    public void should_return_quality_given_name_BackstagepassestoaTAFKAL80ETCconcert_sellin_1_quality_50() {
+        Item[] items = {new Item("Backstage passes to a TAFKAL80ETC concert", 1, 50)};
+        GildedRose gildedRose = new GildedRose(items);
+
+        gildedRose.updateQuality();
+
+        Assert.assertEquals(gildedRose.items[0].quality, 50);
+        Assert.assertEquals(gildedRose.items[0].sellIn, 0);
+    }
+
+    @Test
+    public void should_return_quality_given_name_BackstagepassestoaTAFKAL80ETCconcert_sellin_0_quality_49() {
+        Item[] items = {new Item("Backstage passes to a TAFKAL80ETC concert", 0, 49)};
+        GildedRose gildedRose = new GildedRose(items);
+
+        gildedRose.updateQuality();
+
+        Assert.assertEquals(gildedRose.items[0].quality, 0);
+        Assert.assertEquals(gildedRose.items[0].sellIn, -1);
+    }
+
+    @Test
+    public void should_return_quality_given_name_BackstagepassestoaTAFKAL80ETCconcert_sellin_1_quality_49() {
+        Item[] items = {new Item("Backstage passes to a TAFKAL80ETC concert", 1, 49)};
+        GildedRose gildedRose = new GildedRose(items);
+
+        gildedRose.updateQuality();
+
+        Assert.assertEquals(gildedRose.items[0].quality, 50);
+        Assert.assertEquals(gildedRose.items[0].sellIn, 0);
+    }
+
+    @Test
+    public void should_return_quality_given_name_BackstagepassestoaTAFKAL80ETCconcert_sellin_11_quality_49() {
+        Item[] items = {new Item("Backstage passes to a TAFKAL80ETC concert", 11, 49)};
+        GildedRose gildedRose = new GildedRose(items);
+
+        gildedRose.updateQuality();
+
+        Assert.assertEquals(gildedRose.items[0].quality, 50);
+        Assert.assertEquals(gildedRose.items[0].sellIn, 10);
+    }
+
+    @Test
+    public void should_return_quality_given_name_BackstagepassestoaTAFKAL80ETCconcert_sellin_10_quality_49() {
+        Item[] items = {new Item("Backstage passes to a TAFKAL80ETC concert", 10, 49)};
+        GildedRose gildedRose = new GildedRose(items);
+
+        gildedRose.updateQuality();
+
+        Assert.assertEquals(gildedRose.items[0].quality, 50);
+        Assert.assertEquals(gildedRose.items[0].sellIn, 9);
+    }
+
+    @Test
+    public void should_return_quality_given_name_BackstagepassestoaTAFKAL80ETCconcert_sellin_0_quality_48() {
+        Item[] items = {new Item("Backstage passes to a TAFKAL80ETC concert", 0, 48)};
+        GildedRose gildedRose = new GildedRose(items);
+
+        gildedRose.updateQuality();
+
+        Assert.assertEquals(gildedRose.items[0].quality, 0);
+        Assert.assertEquals(gildedRose.items[0].sellIn, -1);
+    }
+
+    @Test
+    public void should_return_quality_given_name_BackstagepassestoaTAFKAL80ETCconcert_sellin_1_quality_48() {
+        Item[] items = {new Item("Backstage passes to a TAFKAL80ETC concert", 1, 48)};
+        GildedRose gildedRose = new GildedRose(items);
+
+        gildedRose.updateQuality();
+
+        Assert.assertEquals(gildedRose.items[0].quality, 50);
+        Assert.assertEquals(gildedRose.items[0].sellIn, 0);
+    }
+
+    @Test
+    public void should_return_quality_given_name_BackstagepassestoaTAFKAL80ETCconcert_sellin_11_quality_48() {
+        Item[] items = {new Item("Backstage passes to a TAFKAL80ETC concert", 11, 48)};
+        GildedRose gildedRose = new GildedRose(items);
+
+        gildedRose.updateQuality();
+
+        Assert.assertEquals(gildedRose.items[0].quality, 49);
+        Assert.assertEquals(gildedRose.items[0].sellIn, 10);
+    }
+
+    @Test
+    public void should_return_quality_given_name_BackstagepassestoaTAFKAL80ETCconcert_sellin_10_quality_48() {
+        Item[] items = {new Item("Backstage passes to a TAFKAL80ETC concert", 10, 48)};
+        GildedRose gildedRose = new GildedRose(items);
+
+        gildedRose.updateQuality();
+
+        Assert.assertEquals(gildedRose.items[0].quality, 50);
+        Assert.assertEquals(gildedRose.items[0].sellIn, 9);
+    }
+
+    @Test
+    public void should_return_quality_given_name_BackstagepassestoaTAFKAL80ETCconcert_sellin_0_quality_47() {
+        Item[] items = {new Item("Backstage passes to a TAFKAL80ETC concert", 0, 47)};
+        GildedRose gildedRose = new GildedRose(items);
+
+        gildedRose.updateQuality();
+
+        Assert.assertEquals(gildedRose.items[0].quality, 0);
+        Assert.assertEquals(gildedRose.items[0].sellIn, -1);
+    }
+
+    @Test
+    public void should_return_quality_given_name_BackstagepassestoaTAFKAL80ETCconcert_sellin_1_quality_47() {
+        Item[] items = {new Item("Backstage passes to a TAFKAL80ETC concert", 1, 47)};
+        GildedRose gildedRose = new GildedRose(items);
+
+        gildedRose.updateQuality();
+
+        Assert.assertEquals(gildedRose.items[0].quality, 50);
+        Assert.assertEquals(gildedRose.items[0].sellIn, 0);
+    }
+
+    @Test
+    public void should_return_quality_given_name_BackstagepassestoaTAFKAL80ETCconcert_sellin_11_quality_47() {
+        Item[] items = {new Item("Backstage passes to a TAFKAL80ETC concert", 11, 47)};
+        GildedRose gildedRose = new GildedRose(items);
+
+        gildedRose.updateQuality();
+
+        Assert.assertEquals(gildedRose.items[0].quality, 48);
+        Assert.assertEquals(gildedRose.items[0].sellIn, 10);
+    }
+
+    @Test
+    public void should_return_quality_given_name_BackstagepassestoaTAFKAL80ETCconcert_sellin_10_quality_47() {
+        Item[] items = {new Item("Backstage passes to a TAFKAL80ETC concert", 10, 47)};
+        GildedRose gildedRose = new GildedRose(items);
+
+        gildedRose.updateQuality();
+
+        Assert.assertEquals(gildedRose.items[0].quality, 49);
+        Assert.assertEquals(gildedRose.items[0].sellIn, 9);
+    }
+
+    @Test
+    public void should_return_quality_given_name_BackstagepassestoaTAFKAL80ETCconcert_sellin_0_quality_46() {
+        Item[] items = {new Item("Backstage passes to a TAFKAL80ETC concert", 0, 46)};
+        GildedRose gildedRose = new GildedRose(items);
+
+        gildedRose.updateQuality();
+
+        Assert.assertEquals(gildedRose.items[0].quality, 0);
+        Assert.assertEquals(gildedRose.items[0].sellIn, -1);
+    }
+
+    @Test
+    public void should_return_quality_given_name_BackstagepassestoaTAFKAL80ETCconcert_sellin_1_quality_46() {
+        Item[] items = {new Item("Backstage passes to a TAFKAL80ETC concert", 1, 46)};
+        GildedRose gildedRose = new GildedRose(items);
+
+        gildedRose.updateQuality();
+
+        Assert.assertEquals(gildedRose.items[0].quality, 49);
+        Assert.assertEquals(gildedRose.items[0].sellIn, 0);
+    }
 }

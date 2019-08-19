@@ -18,8 +18,8 @@ public class GildedRoseTest {
 
         gildedRose.updateQuality();
 
-        Assert.assertEquals(gildedRose.items[0].quality, 0);
-        Assert.assertEquals(gildedRose.items[0].sellIn, -1);
+        Assert.assertEquals(gildedRose.items[0].getQuality(), 0);
+        Assert.assertEquals(gildedRose.items[0].getSellIn(), -1);
     }
 
     @Test
@@ -29,8 +29,8 @@ public class GildedRoseTest {
 
         gildedRose.updateQuality();
 
-        Assert.assertEquals(gildedRose.items[0].quality, 1);
-        Assert.assertEquals(gildedRose.items[0].sellIn, 0);
+        Assert.assertEquals(gildedRose.items[0].getQuality(), 1);
+        Assert.assertEquals(gildedRose.items[0].getSellIn(), 0);
     }
 
     @Test
@@ -40,8 +40,8 @@ public class GildedRoseTest {
 
         gildedRose.updateQuality();
 
-        Assert.assertEquals(gildedRose.items[0].quality, 0);
-        Assert.assertEquals(gildedRose.items[0].sellIn, -1);
+        Assert.assertEquals(gildedRose.items[0].getQuality(), 0);
+        Assert.assertEquals(gildedRose.items[0].getSellIn(), -1);
     }
 
     @Test
@@ -51,8 +51,8 @@ public class GildedRoseTest {
 
         gildedRose.updateQuality();
 
-        Assert.assertEquals(gildedRose.items[0].quality, 0);
-        Assert.assertEquals(gildedRose.items[0].sellIn, 0);
+        Assert.assertEquals(gildedRose.items[0].getQuality(), 0);
+        Assert.assertEquals(gildedRose.items[0].getSellIn(), 0);
     }
 
     @Test
@@ -62,8 +62,8 @@ public class GildedRoseTest {
 
         gildedRose.updateQuality();
 
-        Assert.assertEquals(gildedRose.items[0].quality, 0);
-        Assert.assertEquals(gildedRose.items[0].sellIn, -1);
+        Assert.assertEquals(gildedRose.items[0].getQuality(), 0);
+        Assert.assertEquals(gildedRose.items[0].getSellIn(), -1);
     }
 
     @Test
@@ -73,8 +73,8 @@ public class GildedRoseTest {
 
         gildedRose.updateQuality();
 
-        Assert.assertEquals(gildedRose.items[0].quality, 0);
-        Assert.assertEquals(gildedRose.items[0].sellIn, 0);
+        Assert.assertEquals(gildedRose.items[0].getQuality(), 0);
+        Assert.assertEquals(gildedRose.items[0].getSellIn(), 0);
     }
 
     @Test
@@ -84,8 +84,8 @@ public class GildedRoseTest {
 
         gildedRose.updateQuality();
 
-        Assert.assertEquals(gildedRose.items[0].quality, 2);
-        Assert.assertEquals(gildedRose.items[0].sellIn, 0);
+        Assert.assertEquals(gildedRose.items[0].getQuality(), 2);
+        Assert.assertEquals(gildedRose.items[0].getSellIn(), 0);
     }
 
     @Test
@@ -95,8 +95,8 @@ public class GildedRoseTest {
 
         gildedRose.updateQuality();
 
-        Assert.assertEquals(gildedRose.items[0].quality, 2);
-        Assert.assertEquals(gildedRose.items[0].sellIn, -1);
+        Assert.assertEquals(gildedRose.items[0].getQuality(), 2);
+        Assert.assertEquals(gildedRose.items[0].getSellIn(), -1);
     }
 
     @Test
@@ -106,8 +106,8 @@ public class GildedRoseTest {
 
         gildedRose.updateQuality();
 
-        Assert.assertEquals(gildedRose.items[0].quality, 0);
-        Assert.assertEquals(gildedRose.items[0].sellIn, 0);
+        Assert.assertEquals(gildedRose.items[0].getQuality(), 0);
+        Assert.assertEquals(gildedRose.items[0].getSellIn(), 0);
     }
 
     @Test
@@ -117,8 +117,8 @@ public class GildedRoseTest {
 
         gildedRose.updateQuality();
 
-        Assert.assertEquals(gildedRose.items[0].quality, 0);
-        Assert.assertEquals(gildedRose.items[0].sellIn, -1);
+        Assert.assertEquals(gildedRose.items[0].getQuality(), 0);
+        Assert.assertEquals(gildedRose.items[0].getSellIn(), -1);
     }
 
     @Test
@@ -128,8 +128,8 @@ public class GildedRoseTest {
 
         gildedRose.updateQuality();
 
-        Assert.assertEquals(gildedRose.items[0].quality, 50);
-        Assert.assertEquals(gildedRose.items[0].sellIn, -1);
+        Assert.assertEquals(gildedRose.items[0].getQuality(), 50);
+        Assert.assertEquals(gildedRose.items[0].getSellIn(), -1);
     }
 
     @Test
@@ -139,8 +139,8 @@ public class GildedRoseTest {
 
         gildedRose.updateQuality();
 
-        Assert.assertEquals(gildedRose.items[0].quality, 50);
-        Assert.assertEquals(gildedRose.items[0].sellIn, 0);
+        Assert.assertEquals(gildedRose.items[0].getQuality(), 50);
+        Assert.assertEquals(gildedRose.items[0].getSellIn(), 0);
     }
 
     @Test
@@ -150,8 +150,8 @@ public class GildedRoseTest {
 
         gildedRose.updateQuality();
 
-        Assert.assertEquals(gildedRose.items[0].quality, 50);
-        Assert.assertEquals(gildedRose.items[0].sellIn, -1);
+        Assert.assertEquals(gildedRose.items[0].getQuality(), 50);
+        Assert.assertEquals(gildedRose.items[0].getSellIn(), -1);
     }
 
     @Test
@@ -161,8 +161,8 @@ public class GildedRoseTest {
 
         gildedRose.updateQuality();
 
-        Assert.assertEquals(gildedRose.items[0].quality, 50);
-        Assert.assertEquals(gildedRose.items[0].sellIn, 0);
+        Assert.assertEquals(gildedRose.items[0].getQuality(), 50);
+        Assert.assertEquals(gildedRose.items[0].getSellIn(), 0);
     }
 
     @Test
@@ -172,8 +172,8 @@ public class GildedRoseTest {
 
         gildedRose.updateQuality();
 
-        Assert.assertEquals(gildedRose.items[0].quality, 50);
-        Assert.assertEquals(gildedRose.items[0].sellIn, -1);
+        Assert.assertEquals(gildedRose.items[0].getQuality(), 50);
+        Assert.assertEquals(gildedRose.items[0].getSellIn(), -1);
     }
 
     @Test
@@ -183,8 +183,8 @@ public class GildedRoseTest {
 
         gildedRose.updateQuality();
 
-        Assert.assertEquals(gildedRose.items[0].quality, 49);
-        Assert.assertEquals(gildedRose.items[0].sellIn, 0);
+        Assert.assertEquals(gildedRose.items[0].getQuality(), 49);
+        Assert.assertEquals(gildedRose.items[0].getSellIn(), 0);
     }
 
 
@@ -195,8 +195,8 @@ public class GildedRoseTest {
 
         gildedRose.updateQuality();
 
-        Assert.assertEquals(gildedRose.items[0].quality, 0);
-        Assert.assertEquals(gildedRose.items[0].sellIn, -1);
+        Assert.assertEquals(gildedRose.items[0].getQuality(), 0);
+        Assert.assertEquals(gildedRose.items[0].getSellIn(), -1);
     }
 
     @Test
@@ -206,8 +206,8 @@ public class GildedRoseTest {
 
         gildedRose.updateQuality();
 
-        Assert.assertEquals(gildedRose.items[0].quality, 50);
-        Assert.assertEquals(gildedRose.items[0].sellIn, 0);
+        Assert.assertEquals(gildedRose.items[0].getQuality(), 50);
+        Assert.assertEquals(gildedRose.items[0].getSellIn(), 0);
     }
 
     @Test
@@ -217,8 +217,8 @@ public class GildedRoseTest {
 
         gildedRose.updateQuality();
 
-        Assert.assertEquals(gildedRose.items[0].quality, 0);
-        Assert.assertEquals(gildedRose.items[0].sellIn, -1);
+        Assert.assertEquals(gildedRose.items[0].getQuality(), 0);
+        Assert.assertEquals(gildedRose.items[0].getSellIn(), -1);
     }
 
     @Test
@@ -228,8 +228,8 @@ public class GildedRoseTest {
 
         gildedRose.updateQuality();
 
-        Assert.assertEquals(gildedRose.items[0].quality, 50);
-        Assert.assertEquals(gildedRose.items[0].sellIn, 0);
+        Assert.assertEquals(gildedRose.items[0].getQuality(), 50);
+        Assert.assertEquals(gildedRose.items[0].getSellIn(), 0);
     }
 
     @Test
@@ -239,8 +239,8 @@ public class GildedRoseTest {
 
         gildedRose.updateQuality();
 
-        Assert.assertEquals(gildedRose.items[0].quality, 50);
-        Assert.assertEquals(gildedRose.items[0].sellIn, 10);
+        Assert.assertEquals(gildedRose.items[0].getQuality(), 50);
+        Assert.assertEquals(gildedRose.items[0].getSellIn(), 10);
     }
 
     @Test
@@ -250,8 +250,8 @@ public class GildedRoseTest {
 
         gildedRose.updateQuality();
 
-        Assert.assertEquals(gildedRose.items[0].quality, 50);
-        Assert.assertEquals(gildedRose.items[0].sellIn, 9);
+        Assert.assertEquals(gildedRose.items[0].getQuality(), 50);
+        Assert.assertEquals(gildedRose.items[0].getSellIn(), 9);
     }
 
     @Test
@@ -261,8 +261,8 @@ public class GildedRoseTest {
 
         gildedRose.updateQuality();
 
-        Assert.assertEquals(gildedRose.items[0].quality, 0);
-        Assert.assertEquals(gildedRose.items[0].sellIn, -1);
+        Assert.assertEquals(gildedRose.items[0].getQuality(), 0);
+        Assert.assertEquals(gildedRose.items[0].getSellIn(), -1);
     }
 
     @Test
@@ -272,8 +272,8 @@ public class GildedRoseTest {
 
         gildedRose.updateQuality();
 
-        Assert.assertEquals(gildedRose.items[0].quality, 50);
-        Assert.assertEquals(gildedRose.items[0].sellIn, 0);
+        Assert.assertEquals(gildedRose.items[0].getQuality(), 50);
+        Assert.assertEquals(gildedRose.items[0].getSellIn(), 0);
     }
 
     @Test
@@ -283,8 +283,8 @@ public class GildedRoseTest {
 
         gildedRose.updateQuality();
 
-        Assert.assertEquals(gildedRose.items[0].quality, 49);
-        Assert.assertEquals(gildedRose.items[0].sellIn, 10);
+        Assert.assertEquals(gildedRose.items[0].getQuality(), 49);
+        Assert.assertEquals(gildedRose.items[0].getSellIn(), 10);
     }
 
     @Test
@@ -294,8 +294,8 @@ public class GildedRoseTest {
 
         gildedRose.updateQuality();
 
-        Assert.assertEquals(gildedRose.items[0].quality, 50);
-        Assert.assertEquals(gildedRose.items[0].sellIn, 9);
+        Assert.assertEquals(gildedRose.items[0].getQuality(), 50);
+        Assert.assertEquals(gildedRose.items[0].getSellIn(), 9);
     }
 
     @Test
@@ -305,8 +305,8 @@ public class GildedRoseTest {
 
         gildedRose.updateQuality();
 
-        Assert.assertEquals(gildedRose.items[0].quality, 0);
-        Assert.assertEquals(gildedRose.items[0].sellIn, -1);
+        Assert.assertEquals(gildedRose.items[0].getQuality(), 0);
+        Assert.assertEquals(gildedRose.items[0].getSellIn(), -1);
     }
 
     @Test
@@ -316,8 +316,8 @@ public class GildedRoseTest {
 
         gildedRose.updateQuality();
 
-        Assert.assertEquals(gildedRose.items[0].quality, 50);
-        Assert.assertEquals(gildedRose.items[0].sellIn, 0);
+        Assert.assertEquals(gildedRose.items[0].getQuality(), 50);
+        Assert.assertEquals(gildedRose.items[0].getSellIn(), 0);
     }
 
     @Test
@@ -327,8 +327,8 @@ public class GildedRoseTest {
 
         gildedRose.updateQuality();
 
-        Assert.assertEquals(gildedRose.items[0].quality, 48);
-        Assert.assertEquals(gildedRose.items[0].sellIn, 10);
+        Assert.assertEquals(gildedRose.items[0].getQuality(), 48);
+        Assert.assertEquals(gildedRose.items[0].getSellIn(), 10);
     }
 
     @Test
@@ -338,8 +338,8 @@ public class GildedRoseTest {
 
         gildedRose.updateQuality();
 
-        Assert.assertEquals(gildedRose.items[0].quality, 49);
-        Assert.assertEquals(gildedRose.items[0].sellIn, 9);
+        Assert.assertEquals(gildedRose.items[0].getQuality(), 49);
+        Assert.assertEquals(gildedRose.items[0].getSellIn(), 9);
     }
 
     @Test
@@ -349,8 +349,8 @@ public class GildedRoseTest {
 
         gildedRose.updateQuality();
 
-        Assert.assertEquals(gildedRose.items[0].quality, 0);
-        Assert.assertEquals(gildedRose.items[0].sellIn, -1);
+        Assert.assertEquals(gildedRose.items[0].getQuality(), 0);
+        Assert.assertEquals(gildedRose.items[0].getSellIn(), -1);
     }
 
     @Test
@@ -360,7 +360,7 @@ public class GildedRoseTest {
 
         gildedRose.updateQuality();
 
-        Assert.assertEquals(gildedRose.items[0].quality, 49);
-        Assert.assertEquals(gildedRose.items[0].sellIn, 0);
+        Assert.assertEquals(gildedRose.items[0].getQuality(), 49);
+        Assert.assertEquals(gildedRose.items[0].getSellIn(), 0);
     }
 }

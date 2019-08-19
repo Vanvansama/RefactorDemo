@@ -77,5 +77,46 @@ public class GildedRoseTest {
         Assert.assertEquals(gildedRose.items[0].sellIn, 0);
     }
 
+    public void should_return_quality_given_name_SulfurasHandofRagnaros_sellin_0_quality_2() {
+        Item[] items = {new Item("Sulfuras, Hand of Ragnaros", 0, 2)};
+        GildedRose gildedRose = new GildedRose(items);
 
+        gildedRose.updateQuality();
+
+        Assert.assertEquals(gildedRose.items[0].quality, 2);
+        Assert.assertEquals(gildedRose.items[0].sellIn, 0);
+    }
+
+    @Test
+    public void should_return_quality_given_name_SulfurasHandofRagnaros_sellin__1_quality_2() {
+        Item[] items = {new Item("Sulfuras, Hand of Ragnaros", -1, 2)};
+        GildedRose gildedRose = new GildedRose(items);
+
+        gildedRose.updateQuality();
+
+        Assert.assertEquals(gildedRose.items[0].quality, 2);
+        Assert.assertEquals(gildedRose.items[0].sellIn, -1);
+    }
+
+    @Test
+    public void should_return_quality_given_name_SulfurasHandofRagnaros_sellin_0_quality_0() {
+        Item[] items = {new Item("Sulfuras, Hand of Ragnaros", 0, 0)};
+        GildedRose gildedRose = new GildedRose(items);
+
+        gildedRose.updateQuality();
+
+        Assert.assertEquals(gildedRose.items[0].quality, 0);
+        Assert.assertEquals(gildedRose.items[0].sellIn, 0);
+    }
+
+    @Test
+    public void should_return_quality_given_name_SulfurasHandofRagnaros_sellin__1_quality_0() {
+        Item[] items = {new Item("Sulfuras, Hand of Ragnaros", -1, 0)};
+        GildedRose gildedRose = new GildedRose(items);
+
+        gildedRose.updateQuality();
+
+        Assert.assertEquals(gildedRose.items[0].quality, 0);
+        Assert.assertEquals(gildedRose.items[0].sellIn, -1);
+    }
 }

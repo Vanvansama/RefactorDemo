@@ -8,17 +8,22 @@ package gildedRose;
  * @Description:
  */
 public class BackstagePasses implements updateStrategy {
+
+    public static final int MAX_QUALITY = 50;
+    public static final int MAX_SELL_IN = 11;
+    public static final int MIDDLE_QUALITY = 6;
+
     @Override
     public void update(Item item) {
-        if (item.getQuality() < 50) {
+        if (item.getQuality() < MAX_QUALITY) {
             item.setQuality(item.getQuality() + 1);
-            if (item.getSellIn() < 11) {
-                if (item.getQuality() < 50) {
+            if (item.getSellIn() < MAX_SELL_IN) {
+                if (item.getQuality() < MAX_QUALITY) {
                     item.setQuality(item.getQuality() + 1);
                 }
             }
-            if (item.getSellIn() < 6) {
-                if (item.getQuality() < 50) {
+            if (item.getSellIn() < MIDDLE_QUALITY) {
+                if (item.getQuality() < MAX_QUALITY) {
                     item.setQuality(item.getQuality() + 1);
                 }
             }

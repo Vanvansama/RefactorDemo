@@ -8,12 +8,17 @@ package gildedRose;
  * @Description:
  */
 public class strategyFactory {
+
+    public static final String SULFURAS_HAND_OF_RAGNAROS = "Sulfuras, Hand of Ragnaros";
+    public static final String BACKSTAGE_PASSES_TO_A_TAFKAL80ETC_CONCERT = "Backstage passes to a TAFKAL80ETC concert";
+    public static final String AGED_BRIE = "Aged Brie";
+
     public updateStrategy getStrategy(String name) {
-        if (name.equals("Aged Brie")) {
+        if (name.equals(AGED_BRIE)) {
             return new AgedBrie();
-        } else if (name.equals("Backstage passes to a TAFKAL80ETC concert")) {
+        } else if (name.equals(BACKSTAGE_PASSES_TO_A_TAFKAL80ETC_CONCERT)) {
             return new BackstagePasses();
-        } else if (name.equals("Sulfuras, Hand of Ragnaros")) {
+        } else if (name.equals(SULFURAS_HAND_OF_RAGNAROS)) {
             return new Sulfuras();
         } else {
             return new Normal();

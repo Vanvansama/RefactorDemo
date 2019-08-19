@@ -77,6 +77,7 @@ public class GildedRoseTest {
         Assert.assertEquals(gildedRose.items[0].sellIn, 0);
     }
 
+    @Test
     public void should_return_quality_given_name_SulfurasHandofRagnaros_sellin_0_quality_2() {
         Item[] items = {new Item("Sulfuras, Hand of Ragnaros", 0, 2)};
         GildedRose gildedRose = new GildedRose(items);
@@ -119,4 +120,71 @@ public class GildedRoseTest {
         Assert.assertEquals(gildedRose.items[0].quality, 0);
         Assert.assertEquals(gildedRose.items[0].sellIn, -1);
     }
+
+    @Test
+    public void should_return_quality_given_name_AgedBrie_sellin_0_quality_50() {
+        Item[] items = {new Item("Aged Brie", 0, 50)};
+        GildedRose gildedRose = new GildedRose(items);
+
+        gildedRose.updateQuality();
+
+        Assert.assertEquals(gildedRose.items[0].quality, 50);
+        Assert.assertEquals(gildedRose.items[0].sellIn, -1);
+    }
+
+    @Test
+    public void should_return_quality_given_name_AgedBrie_sellin_1_quality_50() {
+        Item[] items = {new Item("Aged Brie", 1, 50)};
+        GildedRose gildedRose = new GildedRose(items);
+
+        gildedRose.updateQuality();
+
+        Assert.assertEquals(gildedRose.items[0].quality, 50);
+        Assert.assertEquals(gildedRose.items[0].sellIn, 0);
+    }
+
+    @Test
+    public void should_return_quality_given_name_AgedBrie_sellin_0_quality_49() {
+        Item[] items = {new Item("Aged Brie", 0, 49)};
+        GildedRose gildedRose = new GildedRose(items);
+
+        gildedRose.updateQuality();
+
+        Assert.assertEquals(gildedRose.items[0].quality, 50);
+        Assert.assertEquals(gildedRose.items[0].sellIn, -1);
+    }
+
+    @Test
+    public void should_return_quality_given_name_AgedBrie_sellin_1_quality_49() {
+        Item[] items = {new Item("Aged Brie", 1, 49)};
+        GildedRose gildedRose = new GildedRose(items);
+
+        gildedRose.updateQuality();
+
+        Assert.assertEquals(gildedRose.items[0].quality, 50);
+        Assert.assertEquals(gildedRose.items[0].sellIn, 0);
+    }
+
+    @Test
+    public void should_return_quality_given_name_AgedBrie_sellin_0_quality_48() {
+        Item[] items = {new Item("Aged Brie", 0, 48)};
+        GildedRose gildedRose = new GildedRose(items);
+
+        gildedRose.updateQuality();
+
+        Assert.assertEquals(gildedRose.items[0].quality, 50);
+        Assert.assertEquals(gildedRose.items[0].sellIn, -1);
+    }
+
+    @Test
+    public void should_return_quality_given_name_AgedBrie_sellin_1_quality_48() {
+        Item[] items = {new Item("Aged Brie", 1, 48)};
+        GildedRose gildedRose = new GildedRose(items);
+
+        gildedRose.updateQuality();
+
+        Assert.assertEquals(gildedRose.items[0].quality, 49);
+        Assert.assertEquals(gildedRose.items[0].sellIn, 0);
+    }
+
 }
